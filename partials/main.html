@@ -1,0 +1,35 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Serve You Right Kitchen Portal</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">Home</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div ng-repeat="order in orders" class="panel panel-default">
+        <div class="panel-heading">Order For: {{order.employee.firstName}} {{order.employee.lastName}}</div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-6 col-lg-6">
+              <ul>
+              <li ng-repeat="item in order.items">{{item.itemName}}</li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-6">
+              <button class="btn btn-primary btn-lg">Complete Order!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+{
+  "name": "server-friend-kitchen",
+  "authors": [
+    "Samuel Robertson <samuel.robertson93@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "bootstrap": "^3.3.6",
+    "angular-socket-io": "^0.7.0",
+    "angular-ui-router": "^0.2.18",
+    "socket.io-client": "^1.4.5"
+  }
+}

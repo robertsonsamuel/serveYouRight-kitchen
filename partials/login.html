@@ -1,0 +1,21 @@
+
+<div class="container">
+    <div class="card card-container">
+        <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
+        <img id="profile-img" class="profile-img-card" src="https://t1.ftcdn.net/jpg/00/93/45/70/500_F_93457089_dHTmgrVqsaZ0S5svrDThnFIEPT0iOhVs.jpg" />
+        <p id="profile-name" class="profile-name-card"></p>
+        <form class="form-signin">
+            <span id="reauth-email" class="reauth-email"></span>
+            <input ng-model="storeCode" type="text" id="inputEmail" class="form-control" placeholder="Store Code" required autofocus>
+            <div id="remember" class="checkbox">
+                <label>
+                    <input  type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <button ng-click="login(storeCode)" class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+        </form><!-- /form -->
+        <a href="#" class="forgot-password">
+            Need a store code?
+        </a>
+    </div><!-- /card-container -->
+</div><!-- /container -->
